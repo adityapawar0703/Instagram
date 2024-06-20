@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div
+            class="card border-solid border-gray-300 border-[1.5px] text-gray-400 h-[90vh] w-[28vw] relative top-8 left-[35%] ">
+            <img src="/images/Instagram-Logo-2010-2013.png" alt="" class="h-[17vh] absolute left-[20%] top-5">
+           
+            
+                <%   if(key == true){  %>
+                    <h3 class="absolute  bg-white top-[22%] px-4 w-[22vw] left-[10%] text-red-600 border-[1px] border-solid border-black font-bold text-[15px] font-mono"><i class="ri-alert-line text-red-700"></i>Your account already exist. 
+                        please login
+                    </h3>
+                    <%   } else{ %>
+                <h3 class="absolute  top-[22%] px-5 left-[10%] font-bold text-[15px] font-mono">Sign up to see photos and
+                    videos <br>from your friends.</h3>
+                    <%    }      %>
+               
+              
+
+            <form action="/created" method="post" class="flex flex-col gap-3 py-[50%] px-12">
+
+                <input type="email" placeholder="mobile number or email" name="email"
+                    class="h-8 w-[87%] px-3 border-[1px] border-solid border-gray-300 bg-slate-100 text-black placeholder:text-gray-400">
+                <input type="password" placeholder="password" name="password"
+                    class="h-8 w-[87%] px-3 border-[1px] border-solid border-gray-300 bg-slate-100 text-black placeholder:text-gray-400">
+                <input type="text" placeholder="Full name" name="name"
+                    class="h-8 w-[87%] px-3 border-[1px] border-solid border-gray-300 bg-slate-100 text-black placeholder:text-gray-400">
+                <input type="text" placeholder="username" name="username"
+                    class="h-8 w-[87%] px-3 border-[1px] border-solid border-gray-300 bg-slate-100  text-black placeholder:text-gray-400">
+                <h6 class="text-xs text-gray-500">People who use our service may have uploaded your contact information
+                    to Instagram. Learn more</h6>
+                <h6 class="font-light hover:text-gray-700">By signing up, you agree to our Terms, Privacy Policy and Cookies Policy.</h6>
+
+                <input type="submit" value="Sign up" class="bg-blue-400 w-[87%] text-white font-bold py-1 rounded-md hover:bg-blue-700">
+            </form>
+              <h1 class="absolute h-[5vh] w-[26vw] top-[90%] left-[2%] text-center text-black mt-2">alrady have a account?
+                <a class="text-white bg-blue-500 px-2 py-1 rounded-md" href="/instagram">login</a>
+              </h1>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

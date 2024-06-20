@@ -1,0 +1,29 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+.iphone{
+    min-height: 91vh;
+    width: 22vw;
+ 
+    background-image: url(../images/iphone.png);
+   scale: 0.99;
+    background-size: cover;
+    position: relative;
+    top: 4%;
+    left: 50%;
+    padding: 2vw;
+}
+.card{
+    position: absolute;
+    width: 28vw;
+    min-height: 40vh;
+    top: 8%;
+    left: 2%;
+    border: 1px solid rgb(236, 195, 195);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="main h-screen w-full flex">
+        <div class="left h-full w-[50%] bg-white relative">
+            <div class="iphone"> <img class="h-[94%] w-[19vw] absolute left-[7%] top-[4%]" src="/images/screenshot2.png"
+                    alt=""> </div>
+        </div>
+        <div class="left h-full w-[50%]  relative"> 
+            <div class="card"> 
+                <img class="w-[15vw] h-[15vh] ml-[20%] mt-[5%]" src="/images/Instagram-Logo-2010-2013.png" alt="">
+                <form action="/login" method="post" class="flex flex-col px-10 py-10"> 
+                    <input type="text" placeholder="Name or username" name="username" class="bg-slate-100 h-10 w-[20vw] mb-5 px-4">
+                    <input type="password" placeholder="password" name="password" class="bg-slate-100 h-10 w-[20vw] mb-5 px-4">
+                    <input type="submit" value="Login" class="bg-blue-400 px-10 py-1 w-[20vw] rounded-md text-white font-bold">
+
+                 <div class="line mt-6 flex items-center justify-center gap-4"> <hr class="w-[10vw] "> <h1 class="text-gray-500">OR</h1> <hr class="w-[10vw] "></div>
+
+                 <h1>login with facebook</h1>
+                 <h1>forgotten your password</h1>
+                </form>
+
+            </div>
+            <div class="h-[12vh] w-[28vw]  absolute bottom-14 left-4  border-solid	border-[1px] border-gray-300 flex justify-center items-center"> <h1>don't have a account</h1> <a href="/create" class="text-[15px] text-blue-600 font-bold ml-1">Create one</a> </div>
+
+        </div>
+
+
+    </div>
+    <script src="/javascript/script.js"></script>
+</body>
+
+</html>
